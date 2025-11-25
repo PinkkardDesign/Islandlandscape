@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Island Landscape</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+<!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+  <!-- TOP BANNER -->
+ <div class="top-banner">
+  <img src="assests/images/Island_logo900.jpg" class="banner-logo" alt="Island Landscape Logo">
+</div>
+<section class="text-center py-4">
+  <h1 class="mb-1">Island Landscape</h1>
+  <p class="mb-0">Serving North Seattle Since 1995</p>
+</section>
+ 
+  <!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg navbar-custom border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Island Landscape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <<li class="nav-item">
+          <a class="nav-link" href="services.html">Services &amp; Gallery</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- WELCOME SECTION -->
+    <section class="container section-padding">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="section-heading">Welcome to Island Landscape</h1>
+         <h2 class="section-heading">About Island Landscape</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+              Phasellus convallis lectus vitae urna pretium, in condimentum nisi
+              pellentesque. Integer varius ultricies lectus, vitae pharetra velit rutrum
+              non.
+            </p>
+
+            <p>
+              Fusce id semper est. Suspendisse potenti. Sed cursus, mauris id gravida
+              pulvinar, justo lorem aliquet leo, vitae luctus magna lorem nec urna.
+              Maecenas molestie lorem sed sapien gravida, at pharetra felis gravida.
+            </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="highlight-box">
+            <strong>Contact Island Landscape</strong><br>
+            Phone: 206-555-1234<br>
+            Email: islandlandscape.wa@gmail.com
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO (small, inside card) -->
+    <section class="container section-padding">
+      <h2 class="section-heading">Cleanup in Action</h2>
+      <p>A quick look at a yard cleanup from start to finish.</p>
+
+      <div class="video-box mt-3">
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Cleanup video"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="container section-padding">
+      <h2 class="section-heading">Services at a Glance</h2>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h3 class="h5">Ongoing Maintenance</h3>
+          <ul>
+            <li>Regular mowing schedules</li>
+            <li>Seasonal yard care</li>
+            <li>Pruning</li>
+            <li>Leaf cleanup</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <h3 class="h5">One-Time Services</h3>
+          <ul>
+            <li>Simple mowing</li>
+            <li>Aeration</li>
+            <li>Pressure washing</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="services.html" class="btn btn-primary mt-3">View Full Services</a>
+    </section>
+
+    <!-- CONTACT FORM -->
+<section class="container section-padding">
+  <h2 class="section-heading">Request a Free Estimate</h2>
+
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="card-style">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name*</label>
+            <input type="text" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone*</label>
+            <input type="tel" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email (optional)</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-5 mt-4 mt-lg-0">
+      <div class="highlight-box">
+        <strong>Contact Info</strong><br>
+        Phone: 206-555-1234 <br> <!-- replace with Dave's real number -->
+        Email: islandlandscape.wa@gmail.com
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <div>&copy; <span id="year"></span> Island Landscape</div>
+      <div><a href="#" target="_blank">Facebook Page (coming soon)</a></div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
