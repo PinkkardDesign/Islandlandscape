@@ -1,0 +1,173 @@
+:root {
+  --green-primary: #1A3D1A;
+  --green-secondary: #2E5E2E;
+  --brown-accent: #5A4A32;
+  --background-light: #F7F5F0;
+  --text-main: #333333;
+}
+
+/* Banner */
+    /* HERO BANNER */
+.top-banner {
+  position: relative;
+  height: 380px; /* adjust if needed */
+  width: 100%;
+  background-image: url('/assests/images/truck_banner.jpg'); /* update your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* subtle overlay */
+.top-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25); /* change 0.25 to 0.3 for darker */
+}
+
+/* logo on top */
+.banner-logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  height: 90px;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-banner {
+  position: relative;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* subtle */
+}
+
+    /* Optional spacing */
+    .section-padding {
+      padding: 2rem 0;
+    }
+
+  /* GREEN NAVBAR */
+    .navbar-custom {
+      background-color: var(--green-primary) !important;
+    }
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #d2e6d2 !important;
+    }
+
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 12px; /* soft corners */
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.navbar-brand {
+  padding: 0;
+  margin-right: 1rem;
+}
+
+
+body {
+  background-color: #ffffff;
+  color: var(--text-main);
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--green-primary);
+}
+
+.section-padding {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid #e0e0e0; /* simple line separator */
+    }
+
+    .section-heading {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--green-primary);
+    }
+
+   .highlight-box {
+      background-color: #F7F5F0;
+      border-left: 4px solid var(--brown-accent);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+/* Video wrapper (smaller + card style) */
+    .video-box {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 6px;
+      background: #fafafa;
+      max-width: 800px;
+      margin: auto;
+    }
+
+.accent-box {
+  background-color: var(--background-light);
+  border-left: 4px solid var(--brown-accent);
+  padding: 1rem;
+}
+
+ /* Buttons */
+    .btn-primary {
+      background-color: var(--green-primary);
+      border-color: var(--green-primary);
+    }
+    .btn-primary:hover {
+      background-color: var(--green-light);
+      border-color: var(--green-light);
+    }
+  /* Contact Form Card */
+    .card-style {
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    footer {
+      background-color: #F1EFE8;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+
+    .subheading {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      color: var(--brown-accent);
+    }
+
+    
+    /* Gallery */
+    .gallery-img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ddd;
+    }
