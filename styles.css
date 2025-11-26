@@ -12,7 +12,7 @@
   position: relative;
   height: 380px; /* adjust if needed */
   width: 100%;
-  background-image: url('truck_banner.jpg'); /* update your image path */
+  background-image: url('truck_banner.png'); /* update your image path */
   background-size: cover;
   background-position: center;
 }
@@ -172,3 +172,4 @@ h1, h2, h3 {
       border: 1px solid #ddd;
 
     }
+
