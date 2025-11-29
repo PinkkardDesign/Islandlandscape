@@ -58,25 +58,30 @@
           <h1 class="section-heading">Welcome to Island Landscape</h1>
          <h2 class="section-heading">About Island Landscape</h2>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-              Phasellus convallis lectus vitae urna pretium, in condimentum nisi
-              pellentesque. Integer varius ultricies lectus, vitae pharetra velit rutrum
-              non.
+             <p>
+              Island Landscape is a locally owned lawn and garden service established in 1995,
+              with <strong>over 30 years of experience</strong> in Northwest horticulture.
+              As a proud Plant Amnesty member, Island Landscape uses proper, professional
+              landscape management practices to keep your yard healthy, safe, and looking its best.
             </p>
-
+      
             <p>
-              Fusce id semper est. Suspendisse potenti. Sed cursus, mauris id gravida
-              pulvinar, justo lorem aliquet leo, vitae luctus magna lorem nec urna.
-              Maecenas molestie lorem sed sapien gravida, at pharetra felis gravida.
+              We serve both residential and commercial clients throughout the Seattle area.
+              Whether you need a one-time service or a regular maintenance plan, we customize
+              our work to fit your property’s needs.
             </p>
         </div>
-        <div class="col-lg-4">
+       <div class="col-lg-4">
           <div class="highlight-box">
             <strong>Contact Island Landscape</strong><br>
             Phone: 206-555-1234<br>
             Email: islandlandscape.wa@gmail.com
-          </div>
+        
+        <div class="mt-3">
+          <a href="#contact-form" class="btn btn-primary w-100">
+            Request an Estimate
+          </a>
+        </div>
         </div>
       </div>
     </section>
@@ -126,34 +131,45 @@
     </section>
 
     <!-- CONTACT FORM -->
-<section class="container section-padding">
+ <!-- CONTACT FORM -->
+    <section id="contact-form" class="container section-padding">
   <h2 class="section-heading">Request a Free Estimate</h2>
 
   <div class="row">
     <div class="col-lg-7">
       <div class="card-style">
-        <form>
+        <form action="https://formsubmit.co/islandlandscape.wa@gmail.com" method="POST">
+
+          <!-- Honeypot (spam protection) -->
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Redirect after submit -->
+          <input type="hidden" name="_next" value="https://islandlandscape.netlify.app/success.html">
+
           <div class="mb-3">
             <label class="form-label">Name*</label>
-            <input type="text" class="form-control" required>
+            <input type="text" name="name" class="form-control" required>
           </div>
 
           <div class="mb-3">
             <label class="form-label">Phone*</label>
-            <input type="tel" class="form-control" required>
+            <input type="tel" name="phone" class="form-control" required>
           </div>
 
           <div class="mb-3">
             <label class="form-label">Email (optional)</label>
-            <input type="email" class="form-control">
+            <input type="email" name="email" class="form-control">
           </div>
 
           <div class="mb-3">
             <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4"></textarea>
+            <textarea name="message" class="form-control" rows="4"></textarea>
           </div>
 
-          <button class="btn btn-primary">Submit</button>
+          <button class="btn btn-primary w-100">Submit</button>
         </form>
       </div>
     </div>
@@ -161,13 +177,12 @@
     <div class="col-lg-5 mt-4 mt-lg-0">
       <div class="highlight-box">
         <strong>Contact Info</strong><br>
-        Phone: 206-555-1234 <br> <!-- replace with Dave's real number -->
+        Phone: 206-555-1234 <br>
         Email: islandlandscape.wa@gmail.com
       </div>
     </div>
   </div>
 </section>
-
 
   </main>
 
@@ -187,5 +202,6 @@
 
 </body>
 </html>
+
 
 
