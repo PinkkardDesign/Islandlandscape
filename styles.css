@@ -1,80 +1,78 @@
 :root {
   --green-primary: #1A3D1A;
   --green-secondary: #2E5E2E;
+  --green-light: #3f7a3f; /* added so hover works */
   --brown-accent: #5A4A32;
   --background-light: #F7F5F0;
   --text-main: #333333;
 }
 
-/* Banner */
-    /* HERO BANNER */
+/* TOP BANNER (logo only, no overlay/box) */
 .top-banner {
-  position: relative;
-  height: 380px; /* adjust if needed */
   width: 100%;
-  background-image: url('truck_banner.png'); /* update your image path */
-  background-size: cover;
-  background-position: center;
+  text-align: center;
+  background-color: #fdfdfd;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-/* subtle overlay */
-.top-banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25); /* change 0.25 to 0.3 for darker */
-}
-
-/* logo on top */
 .banner-logo {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  height: 90px;
-  background: #ffffff;
-  padding: 8px 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  height: auto;
+  max-width: 260px; 
+  width: 100%;
+  display: inline-block;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.hero-banner {
-  position: relative;
-}
-
-.hero-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25); /* subtle */
-}
-
-    /* Optional spacing */
-    .section-padding {
-      padding: 2rem 0;
-    }
-
-  /* GREEN NAVBAR */
-    .navbar-custom {
-      background-color: var(--green-primary) !important;
-    }
-    .navbar-custom .nav-link,
-    .navbar-custom .navbar-brand {
-      color: #fff !important;
-    }
-    .navbar-custom .nav-link:hover {
-      color: #d2e6d2 !important;
-    }
-
-
+/* Optional older logo class if used elsewhere */
 .logo-img {
   height: 70px;
   width: auto;
   background-color: #fff;
   padding: 6px;
   border-radius: 12px; /* soft corners */
+}
+
+/* BODY & TYPOGRAPHY */
+body {
+  background-color: #ffffff;
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--green-primary);
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--green-primary);
+}
+
+/* MAIN SECTION BOXES – stronger borders around content */
+.section-padding {
+  padding: 2.5rem 1.75rem;
+  margin: 2rem auto;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: var(--green-primary) !important;
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: #fff !important;
+}
+.navbar-custom .nav-link:hover {
+  color: #d2e6d2 !important;
 }
 
 .navbar-toggler-icon {
@@ -85,91 +83,115 @@
   margin-right: 1rem;
 }
 
-
-body {
-  background-color: #ffffff;
-  color: var(--text-main);
-  color: #333;
-  font-family: Arial, sans-serif;
+/* HIGHLIGHT BOX (contact sidebar) */
+.highlight-box {
+  background-color: #F7F5F0;
+  border: 2px solid #e0e0e0;
+  border-left: 4px solid var(--brown-accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
 }
 
-h1, h2, h3 {
-  color: var(--green-primary);
-}
-
-.section-padding {
-      padding: 2.5rem 0;
-      border-bottom: 1px solid #e0e0e0; /* simple line separator */
-    }
-
-    .section-heading {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--green-primary);
-    }
-
-   .highlight-box {
-      background-color: #F7F5F0;
-      border-left: 4px solid var(--brown-accent);
-      padding: 1rem 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-/* Video wrapper (smaller + card style) */
-    .video-box {
-      border: 1px solid #ccc;
-      padding: 1rem;
-      border-radius: 6px;
-      background: #fafafa;
-      max-width: 800px;
-      margin: auto;
-    }
-
+/* ACCENT BOX (if used elsewhere) */
 .accent-box {
   background-color: var(--background-light);
   border-left: 4px solid var(--brown-accent);
   padding: 1rem;
+  border-radius: 6px;
 }
 
- /* Buttons */
-    .btn-primary {
-      background-color: var(--green-primary);
-      border-color: var(--green-primary);
-    }
-    .btn-primary:hover {
-      background-color: var(--green-light);
-      border-color: var(--green-light);
-    }
-  /* Contact Form Card */
-    .card-style {
-      border: 1px solid #ddd;
-      padding: 1.5rem;
-      border-radius: 6px;
-      background: #fff;
-    }
+/* BUTTONS */
+.btn-primary {
+  background-color: var(--green-primary);
+  border-color: var(--green-primary);
+}
+.btn-primary:hover {
+  background-color: var(--green-light);
+  border-color: var(--green-light);
+}
 
-    footer {
-      background-color: #F1EFE8;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-    }
+/* CONTACT FORM CARD */
+.card-style {
+  border: 2px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+}
 
-    .subheading {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-top: 1rem;
-      color: var(--brown-accent);
-    }
+/* GALLERY IMAGES */
+.gallery-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ddd;
+}
 
-    
-    /* Gallery */
-    .gallery-img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 5px;
-      margin-bottom: 1.25rem;
-      border: 1px solid #ddd;
+/* SERVICE AREA LIST */
+.service-area-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+.service-area-list li {
+  padding-left: 1.2rem;
+  margin-bottom: 0.35rem;
+  position: relative;
+}
+.service-area-list li::before {
+  content: "•";
+  color: var(--green-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-    }
+/* VIDEO BOX (if you re-enable the video later) */
+.video-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #fafafa;
+  max-width: 800px;
+  margin: auto;
+}
 
+/* FOOTER */
+footer {
+  background-color: #fdfdfd;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.95rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--brown-accent);
+}
+.map-frame {
+  width: 100%;
+  max-width: 640px;
+  height: 430px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 520px;
+  border: 0;
+  transform: translateY(-60px);
+}
