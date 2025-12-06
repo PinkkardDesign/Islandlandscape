@@ -151,41 +151,63 @@
 </section>
 
     <!-- CONTACT FORM -->
-   <form
-  name="contact"
-  method="POST"
-  netlify
-  netlify-honeypot="bot-field"
->
-  <!-- Honeypot field (spam protection) -->
-  <p style="display:none;">
-    <label>Don’t fill this out if you’re human:
-      <input name="bot-field">
-    </label>
-  </p>
+   <!-- CONTACT FORM -->
+<section id="contact-form" class="container section-padding">
+  <h2 class="section-heading">Request a Free Estimate</h2>
 
-  <div class="mb-3">
-    <label class="form-label">Name*</label>
-    <input type="text" name="name" class="form-control" required>
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="card-style">
+        <form
+          name="contact"
+          method="POST"
+          netlify
+          netlify-honeypot="bot-field"
+        >
+          <!-- Netlify hidden form name (optional but fine to keep) -->
+          <input type="hidden" name="form-name" value="contact">
+
+          <!-- Honeypot field (spam protection) -->
+          <p style="display:none;">
+            <label>Don’t fill this out if you’re human:
+              <input name="bot-field">
+            </label>
+          </p>
+
+          <div class="mb-3">
+            <label class="form-label">Name*</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone*</label>
+            <input type="tel" name="phone" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email (optional)</label>
+            <input type="email" name="email" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="4"></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-5 mt-4 mt-lg-0">
+      <div class="highlight-box">
+        <strong>Contact Info</strong><br>
+        Phone: 206-459-2262<br>
+        Email: islandlandscape.wa@gmail.com
+      </div>
+    </div>
   </div>
-
-  <div class="mb-3">
-    <label class="form-label">Phone*</label>
-    <input type="tel" name="phone" class="form-control" required>
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label">Email (optional)</label>
-    <input type="email" name="email" class="form-control">
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label">Message</label>
-    <textarea name="message" class="form-control" rows="4"></textarea>
-  </div>
-
-  <button class="btn btn-primary w-100">Submit</button>
-</form>
+</section>
 
   </main>
 
@@ -247,5 +269,6 @@
 
 </body>
 </html>
+
 
 
