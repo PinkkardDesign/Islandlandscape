@@ -195,3 +195,19 @@ footer a:hover {
   border: 0;
   transform: translateY(-60px);
 }
+.full-width-image-wrapper {
+  padding: 0;
+}
+
+.gallery-wide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact-cta-box {
+  background: #f7faf7;
+  border: 1px solid #dce6dc;
+  border-radius: 10px;
+}
