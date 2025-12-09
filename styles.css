@@ -177,6 +177,25 @@ h1, h2, h3 {
   margin: auto;
 }
 
+.testimonial-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: #f7faf7;
+  border-radius: 12px;
+  border: 1px solid #dce6dc;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #2f5e2f;
+  margin-bottom: 0;
+}
 /* FOOTER */
 footer {
   background-color: #fdfdfd;
