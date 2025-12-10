@@ -249,3 +249,14 @@ footer a:hover {
   border: 1px solid #dce6dc;
   border-radius: 10px;
 }
+.highlight-box {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.highlight-box .request-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
